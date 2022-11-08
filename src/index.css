@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+
+button {
+  cursor: pointer;
+  border-end-end-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: rgba(112, 32, 49, 0.6);
+  color: rgba(255, 255, 255);
+  transition: all 200ms;
+}
+button:hover {
+  background-color: rgba(112, 32, 49, 0.8);
+}
+body {
+  background-image: url("./assets/pexels-eberhard-grossgasteiger-844297.jpg");
+  background-size: cover;
+  font-family: "Hammersmith One", sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  background-color: transparent;
+}
+.navbar .logo {
+  padding-left: 20px;
+}
+.navbar .links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  min-width: 120px;
+  text-align: center;
+  padding: 20px 0;
+  display: inline-block;
+  transition: all 200ms;
+}
+.navbar .links a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 90px);
+}
+
+main .search-bar {
+  background-color: white;
+  width: 500px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+main .search-bar *:not(svg) {
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 0 10px;
+}
+main .search-bar input {
+  width: 400px;
+}
+
+main .search-bar .search-bar__button {
+  cursor: pointer;
+  padding: 0 10px;
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms;
+}
+
+main .search-bar .search-bar__button:hover {
+  color: rgba(112, 32, 49, 0.8);
+}
+main .current-weather {
+  background-color: rgba(129, 67, 80, 0.6);
+  font-size: 20px;
+  border-radius: 7px;
+  color: white;
+  font-weight: normal;
+  height: 200px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -5px;
+  z-index: -1;
+  padding-top: 10px;
+}
+main .current-weather .top-menu {
+  display: flex;
+}
+main .current-weather .top-menu .location {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  padding-right: 30px;
+  margin-right: auto;
+}
+main .current-weather .top-menu .current-weather__temp {
+  font-size: 30px;
+
+  padding: 10px;
+}
+main .current-weather .current-weather__img {
+  padding: 5px;
+}
+main .current-weather .current-weather__img img {
+  width: 70px;
+  height: 70px;
+}
+main .current-weather .bottom-menu {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+main .current-weather .bottom-menu .current-weather__desc {
+  padding-top: 10px;
+}
