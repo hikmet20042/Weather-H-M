@@ -1,7 +1,7 @@
 # Weather-H-M
 Weather App created by using React
 
-#Installiation
+#Installation
 
 1. Install node packages:
 ```
