@@ -1,14 +1,13 @@
-import Main from "./components/Main";
-import NavigationBar from "./components/NavigationBar";
-
+import Main from './components/Main/Main'
+import NavBar from './components/NavBar'
 
 function App() {
-  return (
-    <div className="App">
-      <NavigationBar />
-      <Main/>
-    </div>
-  );
+    return (
+        <div className='App'>
+            <NavBar />
+            <Main />
+        </div>
+    )
 }
 
-export default App;
+export default App
