@@ -30,7 +30,7 @@ const getCity = (state) => {
 //get weather data from city
 export const getWeather = (state) => {
     fetch(
-        `https://api.worldweatheronline.com/premium/v1/weather.ashx?key=cb61adfccb264a87af3104849231603&q=${state.city}&format=json&num_of_days=1`
+        `https://api.worldweatheronline.com/premium/v1/weather.ashx?key=c49c57dd83014ec6b69133154232409&q=${state.city}&format=json&num_of_days=1`
     )
         .then((response) => {
             return response.json()
