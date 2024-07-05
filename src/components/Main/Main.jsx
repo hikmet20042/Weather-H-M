@@ -1,7 +1,6 @@
 import WeatherQuery from './WeatherQuery'
 import CurrentWeatherTab from './CurrentWeatherTab'
 import React from 'react'
-import getCurrentLocationWeather from './getAllWeatherInformations'
 
 class Main extends React.Component {
     constructor() {
@@ -12,10 +11,6 @@ class Main extends React.Component {
             city: '',
             weatherIcon: '',
         }
-    }
-
-    componentDidMount() {
-        getCurrentLocationWeather(this.state)
     }
     render() {
         return (

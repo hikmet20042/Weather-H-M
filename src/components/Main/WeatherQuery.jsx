@@ -1,6 +1,5 @@
 import { BsSearch } from 'react-icons/bs'
 import { RiDeleteBack2Line } from 'react-icons/ri'
-import { getWeather } from './getAllWeatherInformations'
 import { useRef } from 'react'
 const WeatherQuery = () => {
     const searchRef = useRef(null)
