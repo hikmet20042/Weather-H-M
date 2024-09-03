@@ -1,6 +1,6 @@
 export async function getInformationAboutCity(city) {
   let response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=6a4f7671da16412497d110824240109&q=${city}&days=1&aqi=no&alerts=no`
+    `https://api.weatherapi.com/v1/forecast.json?key=6a4f7671da16412497d110824240109&q=${city}&days=1&aqi=no&alerts=no`
   );
   let data = await response.json();
   let cityName = data.location.name;
