@@ -1,8 +1,9 @@
 import React from "react";
 import { AiFillInstagram, AiFillGithub, AiFillFacebook } from "react-icons/ai";
+import "./css/footer.css";
 const Footer = () => {
   return (
-    <div class="footer">
+    <div className="footer">
       <div className="social_media">
         <a href="https://instagram.com/us3rhikmet" target="_blank">
           <AiFillInstagram />

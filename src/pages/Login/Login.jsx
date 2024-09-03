@@ -1,8 +1,8 @@
 import React from "react";
-
+import "./css/login.css";
 const Login = () => {
   return (
-    <div class="login">
+    <div className="login">
       <form className="login_form">
         <h1>Login</h1>
         <label for="username" name="username">
@@ -13,7 +13,7 @@ const Login = () => {
           Password:
           <input type="password" id="password" />
         </label>
-        <a class="button" type="submit" href="#">
+        <a className="button" type="submit" href="#">
           Login
         </a>
       </form>
