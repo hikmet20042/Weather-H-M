@@ -112,6 +112,7 @@ main .search-bar .search-bar__submit button {
   padding: 10px;
   background-color: rgba(112, 32, 49, 0.8);
   color: white;
+  font-size: 1rem;
 }
 main .search-bar .search-bar__submit button:hover {
   background-color: rgba(112, 32, 49, 1);
@@ -125,7 +126,6 @@ main .search-bar .search-bar__input .suggestions {
   height: max-content;
   overflow-y: auto;
   position: absolute;
-  font-family: sans-serif;
 }
 
 main .search-bar .search-bar__input .suggestions .suggestion {
@@ -134,8 +134,9 @@ main .search-bar .search-bar__input .suggestions .suggestion {
   min-height: 30px;
   max-height: 30px;
   padding: 5px 20px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(112, 32, 49, 1);
   cursor: pointer;
+  font-size: 1rem;
 }
 main .search-bar .search-bar__input .suggestions .suggestion:last-child {
   border-bottom: 0;
@@ -158,7 +159,7 @@ main .search-bar .search-bar__input .suggestions .suggestion:last-child {
     align-items: flex-start;
   }
   main .search-bar .search-bar__input .suggestions {
-    width: 100%;
+    width: 71vw;
   }
   main .search-bar .search-bar__button {
     padding: 0 10px;

@@ -18,7 +18,8 @@ body {
   background-image: url("./assets/pexels-eberhard-grossgasteiger-844297.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: "Hammersmith One", sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   overflow: hidden;
   width: 100%;
   display: flex;
@@ -39,4 +40,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+}
+
+@supports (height: 100dvh) {
+  .App {
+    height: 100dvh;
+  }
+  .about {
+    height: 100dvh;
+  }
 }

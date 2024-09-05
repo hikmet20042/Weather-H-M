@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="social_media">
-        <a href="https://instagram.com/us3rhikmet" target="_blank">
+        <a href="https://instagram.com/hikmat.mammadli" target="_blank">
           <AiFillInstagram />
         </a>
         <a href="https://github.com/hikmet20042" target="_blank">

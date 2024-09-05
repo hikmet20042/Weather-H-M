@@ -80,3 +80,9 @@
     font-size: 26px;
   }
 }
+
+@supports (height: 100dvh) {
+  .footer {
+    height: 8dvh;
+  }
+}
