@@ -1,6 +1,5 @@
 import React from "react";
 import { AiFillInstagram, AiFillGithub, AiFillFacebook } from "react-icons/ai";
-import "./css/footer.css";
 const Footer = () => {
   return (
     <div className="footer">

@@ -51,9 +51,6 @@ importers:
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.44)
-      postcss:
-        specifier: ^8.4.44
-        version: 8.4.44
       vite:
         specifier: ^3.2.10
         version: 3.2.10(@types/node@22.5.2)(terser@5.31.6)

@@ -1,0 +1,52 @@
+.about {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+  height: 50vh;
+  width: 50vw;
+  background: rgba(129, 67, 80, 0.5);
+  align-self: center;
+  flex-direction: column;
+  animation-name: main;
+  animation-duration: 2s;
+  border-radius: 10px;
+}
+.about .header h1 {
+  font-size: 46px;
+}
+.about .info {
+  font-size: 1.15rem;
+}
+.about .info p {
+  padding-bottom: 10px;
+}
+.about .social_media {
+  font-size: 50px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.about .social_media a {
+  cursor: pointer;
+  color: white;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 440px) {
+  .about {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+  .about .social_media {
+    font-size: 26px;
+  }
+}

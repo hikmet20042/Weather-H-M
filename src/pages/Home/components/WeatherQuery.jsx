@@ -52,7 +52,7 @@ function WeatherQuery({ searchWord, setSearchWord, setWeatherData }) {
             value={searchWord}
             type="text"
             className="search-bar__input"
-            placeholder="Search"
+            placeholder="Search city name..."
             onKeyUp={handleKeyUp}
             onChange={(e) => {
               setSearchWord(e.target.value);

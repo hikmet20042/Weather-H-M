@@ -3,7 +3,7 @@ import CurrentWeatherTab from "./components/CurrentWeatherTab";
 import React from "react";
 import { useState } from "react";
 import "./css/main.css";
-export default function Main() {
+export default function Home() {
   let [searchWord, setSearchWord] = useState("");
   let [weatherData, setWeatherData] = useState();
   return (

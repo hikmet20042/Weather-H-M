@@ -33,6 +33,7 @@ main .current-weather {
 }
 main .current-weather .top-menu {
   display: flex;
+  padding-top: 20px;
 }
 main .current-weather .top-menu .location {
   font-size: 30px;
@@ -100,6 +101,7 @@ main .search-bar .search-bar__button {
   justify-content: center;
   align-items: center;
   transition: all 200ms;
+  z-index: 99;
 }
 
 main .search-bar .search-bar__button:hover {
@@ -120,28 +122,26 @@ main .search-bar .search-bar__input .suggestions {
   display: flex;
   flex-direction: column;
   width: 357px;
-  height: 100px;
+  height: max-content;
   overflow-y: auto;
   position: absolute;
-  font-family: none;
-  border-radius: 0 0 10px 10px;
+  font-family: sans-serif;
 }
 
 main .search-bar .search-bar__input .suggestions .suggestion {
   display: flex;
   align-items: center;
-  min-height: 40px;
-  max-height: 40px;
-
+  min-height: 30px;
+  max-height: 30px;
   padding: 5px 20px;
   border-bottom: 1px solid black;
   cursor: pointer;
 }
+main .search-bar .search-bar__input .suggestions .suggestion:last-child {
+  border-bottom: 0;
+}
 
 @media (max-width: 750px) {
-  main {
-    /* height: 80vh; */
-  }
   main .search-bar {
     max-width: 100%;
   }
@@ -156,6 +156,17 @@ main .search-bar .search-bar__input .suggestions .suggestion {
 @media (max-width: 440px) {
   main {
     align-items: flex-start;
-    height: 80vh;
+  }
+  main .search-bar .search-bar__input .suggestions {
+    width: 100%;
+  }
+  main .search-bar .search-bar__button {
+    padding: 0 10px;
+  }
+  main .current-weather .top-menu .location {
+    font-size: 20px;
+  }
+  main .current-weather .top-menu .current-weather__temp {
+    font-size: 27px;
   }
 }
